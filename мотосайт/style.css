@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo, nav {
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-form button {
+    background: #ff6600; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    padding: 6px 10px; /* Размеры внутренних отступов кнопки */
+    border: none; /* Удаление границы кнопки */
+    border-radius: 3px; /* Закругление углов кнопки */
+    cursor: pointer; /* Указатель при наведении на кнопку */
+}
+
+.search-form button:hover {
+    background: #e65100; /* Изменение цвета фона при наведении */
+}
+
+
+.losung{
+    text-align: center; 
+    margin: 20px 0 5px 0;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 auto;
+}
+
+.slide img {
+    width: auto;
+    height: 300px;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+.hero {
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.hero .btn, .model .btn, .blog .btn {
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
+section {
+    padding: 50px 0;
+}
+
+.popular-models .models-grid,
+.special-offers .offers,
+.customer-reviews .reviews-carousel,
+.blog .blog-posts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.model,
+.offer,
+.review,
+.blog-post {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.model img,
+.offer img {
+    max-width: 50%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.blog-post img {
+    max-width: 30%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.model .price,
+.blog-post p {
+    font-weight: bold;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
